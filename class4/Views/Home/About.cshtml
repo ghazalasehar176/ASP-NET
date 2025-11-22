@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "About";
+}
+
+
+<main aria-labelledby="title">
+    <h2 id="title">
+        @* show page title *@
+        @ViewBag.Title
+    </h2>
+    <h3>
+        @* show page message *@
+        @ViewBag.Message
+    </h3>
+
+    <p>Use this area to provide additional information.</p>
+
+
+    <h1>View Data: @ViewData["msg"]</h1>
+    <h2>View Bag: @ViewBag.Data</h2>
+    <h3>Temp Data: @TempData["Message"]</h3>
+
+</main>

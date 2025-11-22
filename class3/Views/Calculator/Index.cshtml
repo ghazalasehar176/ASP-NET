@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    ViewBag.Title = "Calculator";
+}
+
+<section class="container">
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card text-center">
+                <h2>Math Operation</h2>
+                <form action="~/Calculator/Index" method="post" class="w-100 card-body">
+                    <input type="number" name="num1" placeholder="enter your first number" class="form-control mb-3" />
+                    <input type="number" name="num2" placeholder="enter your second number" class="form-control mb-3" />
+                    <label>
+                        Select your operator
+                        <select class="form-select mb-3" name="operator">
+                            <option value="Add"> Addition</option>
+                            <option value="Sub"> Subtraction</option>
+                            <option value="Multiply"> Multiplication</option>
+                            <option value="Divide"> Division</option>
+                        </select>
+                    </label>
+
+                    <button class="btn btn-primary w-100">Calculate</button>
+                </form>
+
+                @if (ViewBag.result != null)
+                {
+                    <div class="alert alert-info">
+                        @ViewBag.result
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

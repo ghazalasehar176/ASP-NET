@@ -1,0 +1,38 @@
+﻿@model classTask.Models.Employee
+
+<h3>Employee form</h3>
+@using (Html.BeginForm("Employee", "Home", FormMethod.Post))
+{
+
+    @Html.Label("Enter Your ID ")
+    @Html.TextBoxFor(Employee => Employee.Id, new { @class = "form-control" })
+
+    @Html.Label("Enter Your Name ")
+    @Html.TextBoxFor(Employee => Employee.Name, new { @class = "form-control", placeholder = "Enter your name", @required = true })
+
+    @Html.Label("Enter your email ")
+    @Html.TextBoxFor(Employee => Employee.Email, new { @class = "form-control", placeholder = "Enter your email", type = "email" })
+
+    @Html.Label("Enter Your Password ")
+    @Html.PasswordFor(Employee => Employee.password, new { @class = "form-control", placeholder = "Your password", @required = true })
+
+    @Html.Label("Enter Your Age ")
+    @Html.TextBoxFor(Employee => Employee.Age, new { @class = "form-control", placeholder = "Your Age" })
+
+    <br/>
+    @Html.Label("Gender")
+    @Html.RadioButtonFor(Employee => Employee.Gender,"Male")
+
+    <span>Male</span>
+
+    @Html.RadioButtonFor(Employee => Employee.Gender,"Female")
+
+    <span>Female</span>
+    <br />
+
+    @Html.Label("city" , "select your city" , new {@class = "form-label"})
+    @Html.DropDownListFor(Employee => Employee.City , new SelectList(new[] {"Karachi" , "lahore" , "islamabad" , "hyderabad"}))
+
+    <br />
+    <button>Submit</button>
+}

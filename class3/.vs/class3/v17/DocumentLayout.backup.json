@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39550AF1-1963-41C5-9891-F67AAA23330F}|class3.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp.net-\\class3\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39550AF1-1963-41C5-9891-F67AAA23330F}|class3.csproj|solutionrelative:controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39550AF1-1963-41C5-9891-F67AAA23330F}|class3.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp.net-\\class3\\views\\calculator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39550AF1-1963-41C5-9891-F67AAA23330F}|class3.csproj|solutionrelative:views\\calculator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39550AF1-1963-41C5-9891-F67AAA23330F}|class3.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp.net-\\class3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39550AF1-1963-41C5-9891-F67AAA23330F}|class3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\Views\\Calculator\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Calculator\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\Views\\Calculator\\Index.cshtml",
+              "RelativeToolTip": "Views\\Calculator\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T17:34:18.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T17:29:11.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculatorController.cs",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\Controllers\\CalculatorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CalculatorController.cs",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET\\Asp.net-\\class3\\Controllers\\CalculatorController.cs",
+              "RelativeToolTip": "Controllers\\CalculatorController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwCIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T17:12:14.759Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

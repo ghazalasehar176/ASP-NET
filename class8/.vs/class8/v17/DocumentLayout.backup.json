@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net-\\asp.net\\class8\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3D019165-5688-48E0-BDEB-0B6966952931}|class8.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Student\\Delete.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T11:17:25.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T11:11:03.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T10:40:14.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-22T10:36:15.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAswIQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T10:28:26.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T10:25:43.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\ASP.NET-\\ASP.NET\\class8\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAD8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-22T10:25:20.38Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
