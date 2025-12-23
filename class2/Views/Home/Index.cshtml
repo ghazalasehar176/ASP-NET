@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+
+
+@{
+    string name = "Biya";
+    string companyName = "Aptech Pakistan";
+    int number = 123456789;
+    var numbers = new int[] { 1, 2, 3, 4, 5, 6 };
+}
+
+@{
+    var names = new string[] { "Ali", "Biya", "Kashaf", "Eman" };
+}
+
+<h1>@ViewBag.data</h1>
+<h3>@ViewBag.Title</h3>
+
+<h2>Hello @name!</h2>
+<p>Company Name:@companyName</p>
+<p>Number:@number</p>
+
+<ul>
+    @foreach (var n in numbers)
+    {
+        <li>@n</li>
+    }
+</ul>
+
+<ul>
+    @foreach(var username in names)
+    {
+        <li>@username</li>
+    }
+</ul>

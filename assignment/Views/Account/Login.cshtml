@@ -1,0 +1,21 @@
+﻿@model assignment.Models.LoginViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.Username)
+    @Html.TextBoxFor(m => m.Username , null , new{@class = "form-control"})
+
+    @Html.LabelFor(m => m.Password)
+    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+
+    <button class="btn btn-dark">Login</button>
+}
+
+@if (ViewBag.Error != null)
+{
+    <section class="container">
+        <div class="alert alert-danger">
+            @ViewBag.Error
+        </div>
+    </section>
+}

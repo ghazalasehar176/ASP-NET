@@ -1,0 +1,37 @@
+﻿@model assignment.Models.RegisterViewModel;
+
+<h4>User registration</h4>
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.LabelFor(m => m.Username)
+    @Html.TextBoxFor(m => m.Username, null, new { @class = "form-control" });
+
+    @Html.LabelFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Email, null, new { @class = "form-control" });
+
+    @Html.LabelFor(m => m.Password)
+    @Html.TextBoxFor(m => m.Password, null, new { @class = "form-control" });
+
+    @Html.LabelFor(m => m.Role)
+    @Html.TextBoxFor(m => m.Role, new { @class = "form-control" });
+
+
+    <button class="btn btn-dark">Register</button>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p class="text-success">@ViewBag.Message</p>
+}
+
+
+@if (ViewBag.Error != null)
+{
+    <p class="btn btn-danger">@ViewBag.Error</p>
+}
+
+@* <h3>Hashed Password: @ViewBag.hashed</h3>
+<p>@ViewBag.result</p> *@

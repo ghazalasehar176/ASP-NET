@@ -1,0 +1,43 @@
+﻿
+
+
+@model IEnumerable<class6.Models.Student>
+
+@* @model Ye batata hai View ko kis type ka data milega.
+IEnumerable<class6.Models.Student> -> Ye multiple students ka collection hai (jaise list ya array). *@
+
+<h2>Student</h2>
+@foreach(var student in Model)
+{
+    <ul>
+        <li>@student.id</li>
+        <li>@student.name</li>
+        <li>@student.age</li>
+    </ul>
+}
+@*
+@model class6.Models.Student
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<h2>Index</h2>
+
+@if (Model != null)
+{
+    <ul>
+        <li>Id: @Model.id</li>
+        <li>Name: @Model.name</li>
+        <li>Age: @Model.age</li>
+    </ul>
+}
+else
+{
+    <p>No Data Found</p>
+}
+
+ *@

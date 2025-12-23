@@ -1,0 +1,17 @@
+﻿@model IEnumerable<classTask.Models.Employee>
+
+
+    <h5>Employee Information</h5>
+
+@foreach(var employee in Model)
+{
+    <ul>
+        <li>@employee.Id</li>
+        <li>@employee.Name</li>
+        <li>@employee.Email</li>
+        <li>@employee.password</li>
+        <li>@employee.Age</li>
+        <li>@employee.Gender</li>
+        <li>@employee.City</li>
+    </ul>
+}

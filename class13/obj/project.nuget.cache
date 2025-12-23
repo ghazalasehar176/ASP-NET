@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GTgaTBnekuI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\class13\\class13.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dilawer\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

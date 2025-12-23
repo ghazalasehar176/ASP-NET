@@ -1,0 +1,17 @@
+ASP.NET Microsoft Corporation ka ek web framework hai, jise January 2002 mein launch kiya gaya tha. Iska development Scott Guthrie aur Mark Anders ne lead kiya.
+
+ASP.NET aapko web applications (yaani websites aur web-based apps) banane mein madad karta hai.
+
+🔹 Full form:
+
+ASP.NET = Active Server Pages .NET
+
+🔹 Simple meaning:
+
+Jab aapko dynamic website banana hoti hai (jaise Facebook, Amazon, ya koi login system wali site), to ASP.NET uske liye ek platform hai jisme aap C# language use karke code likh sakte ho.
+
+
+Why use ASP.NET?
+
+ASP.NET use karne ka main reason yeh hai ki yeh fast, secure, aur powerful framework hai — especially agar aapko dynamic website ya web application banana ho (jisme login, database, etc. ho).
+Aur sabse badi baat — aap C# language use karte ho, jo easy aur object-oriented hai.

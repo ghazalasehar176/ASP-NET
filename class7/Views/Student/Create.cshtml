@@ -1,0 +1,39 @@
+﻿@model class7.Models.Student
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm("Create", "Student", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name, null, new { @class = "form-control" })
+
+    @Html.LabelFor(m => m.Age)
+    @Html.TextBoxFor(m => m.Age, null, new { @class = "form-control" })
+
+    @Html.LabelFor(m => m.Address)
+    @Html.TextBoxFor(m => m.Address, null, new { @class = "form-control" })
+
+    <button class="btn btn-dark">Save</button>
+
+}
+
+@if(ViewBag.message != null)
+{
+     <div class="alert alert-success">@ViewBag.message</div>
+}
+
+@if(ViewBag.error != null)
+{
+    <div class="alert alert-danger">@ViewBag.error</div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

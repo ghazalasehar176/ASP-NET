@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@* ASP.NET MVC me form banane ke liye use hota hai. Ye HTML ka <form> tag automatically generate karta hai. *@
+@* "Privacy"	Ye Action Method ka naam hai jisko form submit hoga. *@
+@* "Home"	Ye Controller ka naam hai jahan action method exist karta hai. *@
+@* FormMethod.Post	Ye form ko POST request ke zariye bhejta hai. *@
+
+
+@using(Html.BeginForm("Privacy" , "Home" , FormMethod.Post)){
+
+@* Label generate karta hai jo input field ke upar text dikhata hai. *@
+@Html.Label("Enter your name: ")
+
+@* General Format Html.TextBox(name, value, htmlAttributes) *@
+@* "name"  Ye input field ka name attribute ban jata hai e.g. < input name = "name" >.Controller me isi naam se value receive hoti hai. *@
+@* null  Field ka default value(NULL matlab empty). *@
+@* new { … }   Input field ke upar HTML attributes laga raha hai. *@
+@* @required = true required HTML5 validation lagata hai. User empty field submit nahi kar sakta. *@
+
+@Html.TextBox("name" , null , new {@class = "form-control" , placeholder = "Enter your name" , @required = true})
+
+
+@Html.Label("Enter your email: ")
+@* type="email" HTML5 email validation: must contain @ symbol. Wrong email par submit nahi hota. *@
+@Html.TextBox("Email" , null , new {@class = "form-control" , placeholder = "Enter your email" , type = "email" })
+
+
+@Html.Password("password" , null , new{@class = "form-control" ,placeholder = "Your Password" , @required = true})
+
+@Html.RadioButton("gender" , "Male" , false , new{id = "gender1"}) <span> Male</span>
+@Html.RadioButton("gender" , "Female" , false , new{id = "gender2"})<span>Female</span>
+
+@Html.Label("city" , "Select your City",new { @class = "form-label" })
+@Html.DropDownList("City" , new SelectList(new[] {"karachi" , "hyderabad" , "lahore" , "sukker"}))
+
+<button>Submit</button>
+}
