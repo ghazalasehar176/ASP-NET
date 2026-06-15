@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp-net\\bank-account\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp-net\\bank-account\\wwwroot\\css\\contactus.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|solutionrelative:wwwroot\\css\\contactus.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp-net\\bank-account\\models\\contactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|solutionrelative:models\\contactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|c:\\users\\dilawer\\desktop\\biya\\asp.net\\asp-net\\bank-account\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77E9838C-F153-49A5-A3F7-53D6B3BB3226}|Bank-Account.csproj|solutionrelative:views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T17:55:46.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\Models\\ContactViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ContactViewModel.cs",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\Models\\ContactViewModel.cs",
+              "RelativeToolTip": "Models\\ContactViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T13:37:25.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactUs.css",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\wwwroot\\css\\ContactUs.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\ContactUs.css",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\wwwroot\\css\\ContactUs.css",
+              "RelativeToolTip": "wwwroot\\css\\ContactUs.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-22T13:31:51.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\Dilawer\\Desktop\\BIYA\\asp.net\\ASP-NET\\Bank-Account\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T13:30:40.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

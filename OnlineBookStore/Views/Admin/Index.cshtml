@@ -1,0 +1,118 @@
+﻿<style>
+    body {
+        background-color: #f5f1e9;
+        font-family: Arial, sans-serif;
+    }
+
+    .dashboard-container {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .dashboard-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 35px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-card {
+        width: 280px;
+        background: white;
+        padding: 30px 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .card-icon {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        color: #4b2e2e;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .card-btn {
+        background-color: #8b5e3c;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: inline-block;
+        font-weight: 600;
+    }
+
+        .card-btn:hover {
+            background-color: #6b4f4f;
+            color: white;
+        }
+</style>
+
+<div class="dashboard-container">
+
+    <h2 class="dashboard-title">
+        Admin Dashboard
+    </h2>
+
+    <div class="card-wrapper">
+
+        <div class="dashboard-card">
+            <div class="card-icon">📚</div>
+            <div class="card-title">Books</div>
+            <div class="card-text">
+                Manage all books in the store
+            </div>
+            <a href="/Books/Read" class="card-btn">
+                Manage Books
+            </a>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">👥</div>
+            <div class="card-title">Users</div>
+            <div class="card-text">
+                View all registered users
+            </div>
+            <a href="/Admin/Users" class="card-btn">
+                View Users
+            </a>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">🛒</div>
+            <div class="card-title">Orders</div>
+            <div class="card-text">
+                Check customer orders
+            </div>
+            <a href="/Admin/Orders" class="card-btn">
+                View Orders
+            </a>
+        </div>
+
+    </div>
+
+</div>

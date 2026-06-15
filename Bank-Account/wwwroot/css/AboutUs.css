@@ -1,0 +1,113 @@
+﻿* {
+    margin-top: 0%;
+}
+
+.img_about {
+    background-image: url('../images/img.1 (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    box-shadow: -0px -0px 10px black;
+}
+
+.about_img h1 {
+    color: rgb(255, 197, 121);
+    font-size: 60px;
+    padding-top: 20%;
+    font-family: system-ui;
+    text-align: center;
+    text-shadow: -0px -0px 10px black;
+}
+
+/* <!-- Main section--> */
+
+.sec_2 {
+    padding-top: 80px;
+}
+
+    .sec_2 h1 {
+        padding-bottom: 30px;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+.para_AS {
+    text-align: center;
+    padding: 20px 25px 20px 25px;
+    font-size: 20px;
+    font-family: system-ui;
+}
+
+.p2 {
+    padding-top: 35px;
+}
+
+
+/* second Main Section */
+.sec-3 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.h2_1 {
+    text-align: center;
+    width: 55%;
+    font-size: 50px;
+    padding-top: 5%;
+}
+
+.ourvision {
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    border-left: none;
+    border-right: none;
+    background-color: rgb(248, 242, 229);
+    box-shadow: -0px -0px 7px rgb(49, 49, 49);
+}
+
+.paradiv p {
+    width: 55%;
+    padding-left: 40px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.p2_1 {
+    padding-bottom: 20px !important;
+}
+
+.H2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    width: 55%;
+}
+
+.sec-3 hr {
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-sec {
+    */ display: flex;
+    */ width: 45%;
+    .img-sec img
+
+{
+    height: 950px;
+    padding-right: 80px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* Third Section */
+
+    .parentdiv
+
+{
+    display: flex;
+    padding: 10px;
+}

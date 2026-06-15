@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f1e9;
+            color: #333;
+        }
+
+        .admin-wrapper {
+            display: flex;
+        }
+ 
+        .sidebar {
+            width: 250px;
+            min-height: 100vh;
+            background: #3e2723;   
+            position: fixed;
+            left: 0;
+            top: 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+        }
+
+            .sidebar h3 {
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .sidebar a {
+                display: block;
+                color: #f5f1e9;
+                text-decoration: none;
+                padding: 14px 20px;
+                transition: 0.3s;
+                border-left: 3px solid transparent;
+            }
+
+                .sidebar a:hover {
+                    background: #d7ccc8;
+                    border-left: 3px solid #8b5e3c;
+                    padding-left: 25px;
+                }
+
+        /* MAIN AREA */
+        .main {
+            margin-left: 250px;
+            padding: 30px;
+            width: 100%;
+        }
+
+        /* CARD STYLE (for dashboard) */
+        .card-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-top: 4px solid #8b5e3c;
+            transition: 0.3s;
+        }
+
+            .card-box:hover {
+                transform: translateY(-3px);
+            }
+
+        /* TABLE STYLE */
+        table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        th {
+            background: #6b4f4f;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f8f3ed;
+        }
+
+        /* BUTTONS */
+        .btn-primary {
+            background: #8b5e3c;
+            border: none;
+        }
+
+            .btn-primary:hover {
+                background: #6b4f4f;
+            }
+
+    </style>
+
+</head>
+
+ 
+    <body>
+
+        <div class="admin-wrapper">
+
+            <div class="sidebar">
+                <h3>Admin Panel</h3>
+                <a href="/Admin/Index">Dashboard</a>
+                <a href="/Books/Read">Books</a>
+                <a href="/Admin/Users">Users</a>
+                <a href="/Admin/Orders">Orders</a>
+            </div>
+
+            <div class="main">
+                @RenderBody()
+            </div>
+
+        </div>
+
+    </body>
+ 
+</html>

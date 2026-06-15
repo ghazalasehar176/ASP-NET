@@ -1,0 +1,122 @@
+﻿@model OnlineBookStore.Models.Register;
+
+<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .auth-container {
+        max-width: 500px;
+        margin: 60px auto;
+    }
+
+    .auth-card {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .auth-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    label {
+        color: #6b4f4f;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .btn-auth {
+        width: 100%;
+        background-color: #8b5e3c;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+        .btn-auth:hover {
+            background-color: #6b4f4f;
+            color: white;
+        }
+
+    .login-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+        .login-link a {
+            color: #8b5e3c;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+            .login-link a:hover {
+                text-decoration: underline;
+            }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+</style>
+
+<div class="auth-container">
+    <div class="auth-card">
+
+        <h2 class="auth-title">Register</h2>
+
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.name)
+                @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.email)
+                @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.email, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.passwords)
+                @Html.PasswordFor(m => m.passwords, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.passwords, "", new { @class = "text-danger" })
+            </div>
+
+            <button class="btn btn-auth">Create Account</button>
+        }
+
+        <!-- 🔥 LOGIN LINK ADDED -->
+        <div class="login-link">
+            Already have an account?
+            <a href="/Books/Login">Login here</a>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@if (TempData["Register"] != null)
+{
+    <script>
+        Swal.fire({
+            title: "Register Successful",
+            text: "Your Account Has Been Created",
+            icon: "success"
+        })
+    </script>
+}

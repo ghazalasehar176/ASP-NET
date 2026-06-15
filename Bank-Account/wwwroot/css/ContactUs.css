@@ -1,0 +1,22 @@
+﻿.contact-card {
+    background: #0A1F44;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+    .contact-card h3 {
+        font-weight: 600;
+        color: white;
+    }
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #0A1F44;
+    border: none;
+    font-weight: bold;
+}

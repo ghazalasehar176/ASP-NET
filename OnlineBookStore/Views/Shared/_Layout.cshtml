@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineBookStore</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            background-color: #f7f3eb;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: linear-gradient(90deg, #3e2723, #5d4037);
+            padding: 12px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff !important;
+            font-size: 20px;
+        }
+
+        .nav-link {
+            color: #f5f5f5 !important;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+            .nav-link:hover {
+                color: #d7ccc8 !important;
+                transform: translateY(-1px);
+            }
+
+        /* MAIN CONTENT */
+        main {
+            flex: 1;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: auto;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="/Books/Dashboard">
+                Book Store
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Books/Dashboard">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Books/Shop">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Books/Cart">Cart</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Books/MyOrders">Orders</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="/Books/Logout">Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="container">
+        @RenderBody()
+    </main>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- FOOTER -->
+    <footer>
+        © @DateTime.Now.Year Online Book Store | Developed by Ghazala Sehar
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

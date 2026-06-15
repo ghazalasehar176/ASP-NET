@@ -1,0 +1,124 @@
+﻿@model List<OnlineBookStore.Models.Order>
+
+<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .orders-container {
+        margin-top: 40px;
+    }
+
+    .page-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .orders-table {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+        .orders-table th {
+            background-color: #6b4f4f;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .orders-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+    .btn-details {
+        background-color: #8b5e3c;
+        color: white;
+        text-decoration: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+        .btn-details:hover {
+            background-color: #6b4f4f;
+            color: white;
+        }
+
+    .btn-invoice {
+        background-color: #198754;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        padding: 8px 14px;
+    }
+
+        .btn-invoice:hover {
+            background-color: #146c43;
+            color: white;
+        }
+
+    .empty-orders {
+        text-align: center;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        color: #6b4f4f;
+        font-size: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="container orders-container">
+
+    <h2 class="page-title"> My Orders</h2>
+
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="empty-orders">
+             No Orders Found
+        </div>
+    }
+    else
+    {
+        <table class="table orders-table">
+            <tr>
+                <th>Order ID</th>
+                <th>Total Amount</th>
+                <th>Order Date</th>
+                <th>Details</th>
+                <th>Invoice</th>
+            </tr>
+
+            @foreach (var o in Model)
+            {
+                <tr>
+                    <td>#@o.OrderId</td>
+                    <td>Rs. @o.TotalAmount</td>
+                    <td>@o.OrderDate</td>
+
+                    <td>
+                        <a href="/Books/OrderDetails/@o.OrderId"
+                           class="btn-details">
+                            View Details
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-action="Invoice"
+                           asp-route-id="@o.OrderId"
+                           class="btn btn-invoice">
+                            View Invoice
+                        </a>
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+
+</div> 

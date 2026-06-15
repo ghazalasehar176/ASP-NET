@@ -1,0 +1,39 @@
+﻿@model FundTransferModel
+<center>
+    <h2>Fund Transfer</h2>
+    @using (Html.BeginForm())
+    {
+
+        <div>
+            @Html.TextBoxFor(m => m.FromAccount, new { @class = "text", placeholder = "From Account " })
+        </div>
+        <div>
+            @Html.TextBoxFor(m => m.ToAccount, new { @class = "text", placeholder = "To Account " })
+        </div>
+        <div>
+            @Html.TextBoxFor(m => m.Amount, new { @class = "text", placeholder = "Amount" })
+        </div>
+        <div>
+            @Html.TextBoxFor(m => m.TransactionDate, "{0:yyyy-MM-ddTHH:mm}", new { @class = "text", placeholder = "Transaction Date", @type = "datetime-local" })
+        </div>
+        <div>
+            @Html.TextBoxFor(m => m.TransactionPassword, new { @class = "text", placeholder = "Transaction Password" })
+        </div>
+        <button type="submit" class="btn-transfer">Transfer</button>
+
+    }
+</center>
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.SuccessMessage
+    </div>
+}
+@if (ViewBag.error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.error
+    </div>
+}
+
+

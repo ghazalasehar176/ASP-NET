@@ -1,0 +1,53 @@
+﻿@model Bank_Account.Models.LoginViewModel
+
+
+<div class="login-container">
+    <div class="login-card">
+
+
+        <h3>User Login</h3>
+
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(m => m.username)
+            @Html.TextBoxFor(m => m.username, new { @class = "form-control" })
+
+            @Html.LabelFor(m => m.password)
+            @Html.PasswordFor(m => m.password, new { @class = "form-control" })
+
+            <button class="btn btn-secondary mt-3" type="submit">Login</button>
+        }
+
+        @if (ViewBag.Message != null)
+        {
+            <p class="text-success">@ViewBag.Message</p>
+        }
+
+        @if (ViewBag.Error != null)
+        {
+            <p class="text-danger">@ViewBag.Error</p>
+        }
+        @if (TempData["Message"] != null)
+        {
+            <p class="text-success">@TempData["Message"]</p>
+        }
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+
+
+        @if (ViewBag.Error != null && ViewBag.Error.ToString().Contains("locked"))
+        {
+            <script>
+                // page automatically refresh after 3 minutes
+                setTimeout(function() {
+                    window.location.href = '@Url.Action("Login", "UserRegister")';
+                }, 180000); // 180000ms = 3 min
+            </script>
+        }
+
+    </div>
+</div>
+
+

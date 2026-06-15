@@ -1,0 +1,126 @@
+﻿@model OnlineBookStore.Models.Login;
+
+<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .auth-container {
+        max-width: 500px;
+        margin: 60px auto;
+    }
+
+    .auth-card {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .auth-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    label {
+        color: #6b4f4f;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .btn-auth {
+        width: 100%;
+        background-color: #8b5e3c;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+        .btn-auth:hover {
+            background-color: #6b4f4f;
+            color: white;
+        }
+
+    .Register-link a {
+        color: #8b5e3c;
+        font-weight: 600;
+        text-decoration: none;
+       
+    }
+
+        .Register-link a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="auth-container">
+    <div class="auth-card">
+
+        <h2 class="auth-title"> Login</h2>
+
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(m => m.email)
+            @Html.TextBoxFor(m => m.email, null, new { @class = "form-control" })
+
+            @Html.LabelFor(m => m.passwords)
+            @Html.PasswordFor(m => m.passwords, new { @class = "form-control" })
+
+            <button class="btn btn-auth">Login</button>
+        }
+
+        <!-- 🔥 Register LINK ADDED -->
+        <div class="Register-link">
+            Don't have an account?
+            <a href="/Books/Register">Register here</a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+@if (ViewBag.error != null)
+{
+    <div class="alert alert-danger mt-3">
+        @ViewBag.error
+    </div>
+}
+
+
+@if (TempData["Success"] != null)
+
+{
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+@if(TempData["Logout"] != null)
+{
+    <script>
+       Swal.fire(
+       {
+            title: "Logout",
+            text: "You have been logout successfully",
+            icon: "success",
+       });
+    </script>
+}
+

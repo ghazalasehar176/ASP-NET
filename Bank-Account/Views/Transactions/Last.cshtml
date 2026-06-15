@@ -1,0 +1,36 @@
+﻿@model List<Bank_Account.Models.TransactionModel>
+
+<h2>Last N Transactions</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.TranDate?.ToString("yyyy-MM-dd")</td> 
+                    <td>@item.Description</td>
+                    <td>@item.Amount.ToString("C")</td>
+                    <td>@item.TranType</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">No transactions found for this month.</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.csproj.AssemblyReference.cache
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.UserForm.resources
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.Properties.Resources.resources
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.csproj.GenerateResource.cache
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.csproj.CoreCompileInputs.cache
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\bin\Debug\class14.exe.config
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\bin\Debug\class14.exe
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\bin\Debug\class14.pdb
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.exe
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.pdb
+C:\Users\Dilawer\Desktop\BIYA\asp.net\ASP-NET\class14\obj\Debug\class14.exe.config

@@ -1,0 +1,97 @@
+﻿<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .checkout-card {
+        max-width: 800px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #4b2e2e;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .section-title {
+        color: #6b4f4f;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    .summary-box {
+        background: #f8f4ee;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .total {
+        font-size: 24px;
+        font-weight: bold;
+        color: #8b5e3c;
+    }
+
+    .btn-order {
+        background-color: #6b4f4f;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+        .btn-order:hover {
+            background-color: #4b2e2e;
+        }
+</style>
+
+<div class="checkout-card">
+
+    <h2> Checkout</h2>
+
+    <h5 class="section-title">Customer Information</h5>
+
+    <input type="text" class="form-control" placeholder="Full Name">
+
+    <input type="email" class="form-control" placeholder="Email Address">
+
+
+    <textarea class="form-control" rows="3"
+              placeholder="Shipping Address"></textarea>
+
+    <h5 class="section-title mt-4">Payment Method</h5>
+
+    <select class="form-control">
+        <option>Cash On Delivery</option>
+        <option>Credit / Debit Card</option>
+        <option>EasyPaisa</option>
+        <option>JazzCash</option>
+    </select>
+
+    <div class="summary-box">
+        <h5>Order Summary</h5>
+        <hr>
+
+        <p class="total">Total Amount : Rs. @ViewBag.Total</p>
+    </div>
+
+    <form method="post" action="/Books/CheckoutConfirm">
+        <button class="btn-order mt-4">
+            Place Order
+        </button>
+    </form>
+
+</div>

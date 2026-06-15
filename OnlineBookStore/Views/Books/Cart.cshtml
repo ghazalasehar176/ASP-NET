@@ -1,0 +1,142 @@
+﻿<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    h3 {
+        color: #4b2e2e;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .table {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .table th {
+        background-color: #6b4f4f;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .table img {
+        width: 70px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .action-btn {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 6px;
+        margin: 2px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .plus-btn {
+        background: #198754;
+        color: white;
+    }
+
+    .minus-btn {
+        background: #ffc107;
+        color: black;
+    }
+
+    .remove-btn {
+        background: #dc3545;
+        color: white;
+    }
+
+    .checkout-btn {
+        background-color: #4b2e2e;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .checkout-btn:hover {
+        background-color: #6b4f4f;
+        color: white;
+    }
+
+    .empty-cart {
+        text-align: center;
+        font-size: 20px;
+        color: #6b4f4f;
+        margin-top: 50px;
+    }
+</style>
+
+
+@model List<CartViewModel>
+
+    <h3>My Cart</h3>
+
+@if (Model == null || Model.Count == 0)
+{
+    <p class="empty-cart">🛒 Your Cart is Empty</p>
+}
+else
+{
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            
+            <tr>
+                <td>
+                    <img src="~/images/@item.imageUrl" width="100">
+                </td>
+                <td>@item.Title</td>
+                <td>@item.price</td>
+                <td>@item.Quantity</td>
+                <td>@item.Total</td>
+
+                <td>
+                    <a href="/Books/Increase/@item.bookId" class="action-btn plus-btn">+</a>
+
+                    <a href="/Books/Decrease/@item.bookId" class="action-btn minus-btn">-</a>
+
+                    <a href="/Books/Remove/@item.bookId" class="action-btn remove-btn">
+                        Remove
+                    </a>
+                </td>
+                
+               
+            </tr>
+        }
+        <div class="text-end mt-3">
+            <a class="checkout-btn" href="/Books/Checkout">
+                Proceed to Checkout
+            </a>
+        </div>
+    </table>
+}
+
+ 
+
+      

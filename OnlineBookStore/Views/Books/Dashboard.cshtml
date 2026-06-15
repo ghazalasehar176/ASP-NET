@@ -1,0 +1,137 @@
+﻿@model OnlineBookStore.Models.Dashboard
+
+<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .dashboard-container {
+        margin-top: 40px;
+    }
+
+    .welcome-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        .welcome-card h2 {
+            color: #4b2e2e;
+            font-weight: bold;
+        }
+
+    .info-card {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: 0.3s;
+        height: 100%;
+    }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            color: #6b4f4f;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .info-card h4 {
+            color: #333;
+            font-weight: bold;
+        }
+
+    .btn-shop {
+        background-color: #8b5e3c;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+        .btn-shop:hover {
+            background-color: #6b4f4f;
+            color: white;
+        }
+
+    .btn-orders {
+        background-color: #198754;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .btn-orders:hover {
+            background-color: #146c43;
+            color: white;
+        }
+
+    .action-buttons {
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+
+<div class="container dashboard-container">
+
+    <div class="welcome-card">
+        <h2> Welcome</h2>
+        <h4>@Model.names</h4>
+        <p class="text-muted">
+            Manage your orders and continue shopping from your dashboard.
+        </p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6 mb-3">
+            <div class="info-card">
+                <h3>Total Orders</h3>
+                <h4>@Model.TotalOrders</h4>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="info-card">
+                <h3>Last Order Date</h3>
+                <h4>@Model.LastOrderDate</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="action-buttons">
+
+        <a href="/Books/Shop" class="btn-shop">
+              Shop Books
+        </a>
+
+        <a href="/Books/MyOrders" class="btn-orders">
+             My Orders
+        </a>
+
+    </div>
+
+</div>
+
+@if (ViewBag.LoginSuccess == true)
+{
+    <script>
+        Swal.fire({
+            title: "Welcome!",
+            text: "You Have Logged In Successfully",
+            icon: "success"
+        });
+    </script>
+}

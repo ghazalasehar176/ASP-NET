@@ -1,0 +1,102 @@
+﻿@model Bank_Account.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "User Register";
+}
+
+<div class="register-container">
+    <div class="register-card">
+        <h2>Create Your Account</h2>
+        <p class="subtitle">Secure Online Banking Registration</p>
+
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.fullname)
+                @Html.TextBoxFor(m => m.fullname, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.dob)
+                @Html.TextBoxFor(m => m.dob, new { @class = "form-control", Type = "date" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.cnicnum)
+                @Html.TextBoxFor(m => m.cnicnum, new {
+                @class = "form-control",
+                        @pattern = @"^\d{5}-\d{7}-\d{1}$",
+                        @title = "CNIC format: 12345-1234567-1",
+                        @maxlength = "15",
+                        @required = "required"
+                        })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.phonenum)
+            @Html.TextBoxFor(m => m.phonenum, new {
+                        @class = "form-control",
+                        @maxlength = "11",
+                        @required = "required"
+                        })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.email)
+            @Html.TextBoxFor(m => m.email, new {
+                        @class = "form-control",
+                        @required = "required"
+                        })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.accounttype)
+            @Html.DropDownListFor(m => m.accounttype,
+                        new List<SelectListItem>
+                        {
+                        new SelectListItem { Text = "Saving", Value = "Saving" },
+                        new SelectListItem { Text = "Current", Value = "Current" }
+                        },
+                        "Select Account Type",
+                        new { @class = "form-control", @required = "required" }
+                        )
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.username)
+            @Html.TextBoxFor(m => m.username, new {
+                        @class = "form-control",
+                        @pattern = "^[A-Za-z]+$",
+                        @title = "Only letters allowed",
+                        @required = "required"
+                        })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.password)
+            @Html.PasswordFor(m => m.password, new {
+                        @class = "form-control",
+                        @required = "required",
+                        @pattern = ".{6,}",
+                        @title = "Minimum 6 characters"
+                        })
+        </div>
+
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.agreeterm)
+            <label class="form-check-label">Agree to terms & conditions</label>
+        </div>
+
+        <button class="btn btn-primary w-100 mt-3">Register</button>
+                }
+
+        @if (ViewBag.Message != null)
+        {
+            <p class="text-success mt-3">@ViewBag.Message</p>
+        }
+
+        @if (ViewBag.Error != null)
+        {
+            <p class="text-danger mt-3">@ViewBag.Error</p>
+        }
+    </div>
+</div>

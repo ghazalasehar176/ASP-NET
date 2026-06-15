@@ -1,0 +1,139 @@
+﻿@model IEnumerable<OnlineBookStore.Models.Book>
+
+<style>
+    .orders-container {
+        margin-top: 40px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .orders-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .orders-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+        .orders-table th {
+            background-color: #6b4f4f;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .orders-table td {
+            text-align: center;
+            padding: 12px;
+            color: #444;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .orders-table tr:hover {
+            background-color: #f8f3ed;
+        }
+
+    /* BUTTONS */
+    .btn-action {
+        padding: 6px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 13px;
+        margin: 2px;
+        display: inline-block;
+        font-weight: 500;
+    }
+
+    .btn-edit {
+        background: #6b4f4f;
+        color: white;
+    }
+
+        .btn-edit:hover {
+            background: #4b2e2e;
+        }
+
+    .btn-delete {
+        background: #b23a48;
+        color: white;
+    }
+
+        .btn-delete:hover {
+            background: #8e2f3b;
+        }
+
+    .create-link {
+        display: inline-block !important;
+        padding: 8px 14px;
+        background: #4b2e2e;
+        color: white !important;
+        border-radius: 6px;
+        text-decoration: none !important;
+        font-weight: 500;
+    }
+
+        .create-link:hover {
+            background: #6b4f4f;
+            color: white !important;
+        }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        color: #6b4f4f;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="orders-container">
+
+    <h3 class="orders-title">Books List</h3>
+
+    <a asp-action="Create" class="back-link">Create New</a>
+    <table class="orders-table">
+
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.title)</th>
+            <th>@Html.DisplayNameFor(m => m.author)</th>
+            <th>@Html.DisplayNameFor(m => m.price)</th>
+            <th>@Html.DisplayNameFor(m => m.category)</th>
+            <th>@Html.DisplayNameFor(m => m.stock)</th>
+            <th>@Html.DisplayNameFor(m => m.imageUrl)</th>
+            <th>Actions</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.title</td>
+                <td>@item.author</td>
+                <td>@item.price</td>
+                <td>@item.category</td>
+                <td>@item.stock</td>
+                <td>@item.imageUrl</td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { bookId = item.bookId }, new { @class = "btn-action btn-edit" })
+                    @Html.ActionLink("Delete", "Delete", new { bookId = item.bookId }, new { @class = "btn-action btn-delete" })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

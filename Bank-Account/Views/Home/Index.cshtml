@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (TempData["Success"] != null)
+{
+    <p class="text-success">@TempData["Success"]</p>
+}
+
+@* id user login then show the logout button  *@
+@if (ViewContext.HttpContext.Session.GetString("username") != null)
+{
+    <button> <a href="@Url.Action("Logout", "UserRegister")">Logout</a></button>
+}
+
+<!-- Slider / Hero Section -->
+<div id="homepageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="~/images/slide1.jpg" class="d-block w-100" alt="Secure Banking">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Secure Online Banking</h2>
+                <p>Access your accounts anytime, anywhere with full security.</p>
+                <a class="btn btn-primary" href="/UserRegister/Login">Login</a>
+                <a class="btn btn-outline-primary" href="/UserRegister/Register">Register</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="~/images/slide2.jpg" class="d-block w-100" alt="Fast Transactions">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Fast & Reliable Transactions</h2>
+                <p>Transfer funds instantly within the bank.</p>
+                <a class="btn btn-primary" href="/UserRegister/Login">Login</a>
+                <a class="btn btn-outline-primary" href="/UserRegister/Register">Register</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="~/images/slide3.jpg" class="d-block w-100" alt="Account Management">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Manage Your Accounts</h2>
+                <p>View balance, statements, and services easily.</p>
+                <a class="btn btn-primary" href="/UserRegister/Login">Login</a>
+                <a class="btn btn-outline-primary" href="/UserRegister/Register">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+@* transactions *@
+
+<div class="services mt-5">
+    <div style="text-align:center; margin-top:30px;">
+        <a class="btn btn-primary" href="/Transactions/Last">Last</a>
+        <a class="btn btn-primary" href="/Transactions/monthly">Monthly</a>
+        <a class="btn btn-primary" href="/Transactions/Report">Report</a>
+        <a class="btn btn-primary" href="/Transactions/Annual">Annual</a>
+    </div>
+</div>
+
+
+@* fund transfer *@
+<div class="services mt-5">
+    <div style="text-align:center; margin-top:30px;">
+        <a class="btn btn-primary" href="/FundTransferController1/Index">Fund transfer</a>
+    </div>
+</div>
+
+
+<!-- Services Section (unchanged) -->
+<div class="services mt-5">
+    <div class="service-box">
+        <h3>Balance Enquiry</h3>
+        <p>Check your account balance anytime.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Fund Transfer</h3>
+        <p>Transfer money securely within the bank.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Account Statements</h3>
+        <p>View monthly and annual statements.</p>
+    </div>
+</div>
+
+
+<div class="services">
+    <div class="service-box">
+        <h3>Balance Enquiry</h3>
+        <p>Check your account balance anytime.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Fund Transfer</h3>
+        <p>Transfer money securely within the bank.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Account Statements</h3>
+        <p>View monthly and annual statements.</p>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.hero {
+    background-color: #0A1F44;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+    .hero .btn {
+        margin: 10px;
+    }
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.service-box {
+    width: 30%;
+    padding: 20px;
+    background-color: #f2f4f7;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .carousel-caption h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+.carousel-item img {
+    margin-top:40px;
+    height:500px;
+}

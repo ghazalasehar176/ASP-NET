@@ -1,0 +1,84 @@
+﻿<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    h2 {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+
+    .table {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+        .table th {
+            background-color: #6b4f4f;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 15px;
+        }
+
+        .table tr:hover {
+            background-color: #f8f4ee;
+        }
+
+    .book-title {
+        color: #4b2e2e;
+        font-weight: 600;
+    }
+
+    .quantity {
+        font-weight: bold;
+        color: #198754;
+    }
+
+    .price {
+        font-weight: bold;
+        color: #8b5e3c;
+    }
+
+    .details-card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-top: 30px;
+    }
+</style>
+
+<div class="container">
+    <div class="details-card">
+
+        <h2> Order Details</h2>
+
+        <table class="table">
+            <tr>
+                <th>Book</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="book-title">@item.Title</td>
+                    <td class="quantity">@item.Quantity</td>
+                    <td class="price">Rs. @item.Price</td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</div>

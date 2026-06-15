@@ -1,0 +1,133 @@
+﻿@model OnlineBookStore.Models.OrderInvoice
+
+<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .invoice-container {
+        margin-top: 40px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .invoice-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .invoice-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #444;
+    }
+
+    .invoice-info b {
+        color: #6b4f4f;
+    }
+
+    .invoice-table {
+        margin-top: 20px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .invoice-table th {
+            background-color: #6b4f4f;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .invoice-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+    .total-section {
+        text-align: right;
+        margin-top: 20px;
+        color: #4b2e2e;
+        font-weight: bold;
+    }
+
+    .btn-print {
+        background-color: #198754;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 18px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+        .btn-print:hover {
+            background-color: #146c43;
+            color: white;
+        }
+
+    @@media print {
+        .btn-print {
+            display: none;
+        }
+
+        body {
+            background: white;
+        }
+
+        .invoice-container {
+            box-shadow: none;
+            border: none;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="invoice-container">
+
+        <h2 class="invoice-title">Order Invoice</h2>
+
+        <hr />
+
+        <div class="invoice-info">
+            <p><b>Order ID:</b> #@Model.OrderId</p>
+            <p><b>Email:</b> @Model.Email</p>
+            <p><b>Date:</b> @Model.OrderDate</p>
+        </div>
+
+        <table class="table invoice-table">
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Quantity</td>
+                        <td>Rs. @item.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h4 class="total-section">
+            Total Amount: Rs. @Model.TotalAmount
+        </h4>
+
+        <button onclick="window.print()" class="btn btn-print">
+             Print Invoice
+        </button>
+
+    </div>
+</div>

@@ -1,0 +1,86 @@
+﻿@model OnlineBookStore.Models.Book
+
+<style>
+    body {
+        background-color: #f5f1e9;
+    }
+
+    .auth-container {
+        max-width: 500px;
+        margin: 60px auto;
+    }
+
+    .auth-card {
+        background: white;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .auth-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    label {
+        color: #6b4f4f;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-auth {
+        width: 100%;
+        background-color: #8b5e3c;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+        .btn-auth:hover {
+            background-color: #6b4f4f;
+            color: white;
+        }
+</style>
+
+<div class="auth-container">
+    <div class="auth-card">
+
+        <h2 class="auth-title">Create Book</h2>
+
+        @using (Html.BeginForm())
+        {
+            <label>Title</label>
+            @Html.TextBoxFor(m => m.title, new { @class = "form-control" })
+
+            <label>Author</label>
+            @Html.TextBoxFor(m => m.author, new { @class = "form-control" })
+
+            <label>Price</label>
+            @Html.TextBoxFor(m => m.price, new { @class = "form-control" })
+
+            <label>Category</label>
+            @Html.TextBoxFor(m => m.category, new { @class = "form-control" })
+
+            <label>Stock</label>
+            @Html.TextBoxFor(m => m.stock, new { @class = "form-control" })
+
+            <label>Image URL</label>
+            @Html.TextBoxFor(m => m.imageUrl, new { @class = "form-control" })
+
+            <button type="submit" class="btn-auth">Save Book</button>
+        }
+
+    </div>
+</div>

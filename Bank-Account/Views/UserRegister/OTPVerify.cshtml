@@ -1,0 +1,30 @@
+﻿@model Bank_Account.Models.OTPverifyModel
+
+<h4>OTP Verification</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.email)
+    @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+
+    @Html.LabelFor(m => m.enteredOtp, "Enter OTP")
+    @Html.TextBoxFor(m => m.enteredOtp, new { @class = "form-control", type = "number", maxlength = "4", required = "required" })
+
+    <button class="btn btn-primary mt-2">Verify OTP</button>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+
+@if (TempData["Message"] != null)
+{
+
+    <div class="alert alert-success">@TempData["Message"]</div>
+}

@@ -1,0 +1,79 @@
+﻿@model List<Register>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+ 
+    .users-container {
+        margin-top: 40px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .users-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .users-table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+        .users-table th {
+            background-color: #6b4f4f;
+            color: white;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .users-table td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            color: #444;
+        }
+
+        .users-table tr:hover {
+            background-color: #f8f3ed;
+        }
+
+    .user-count {
+        text-align: right;
+        margin-bottom: 15px;
+        color: #4b2e2e;
+        font-weight: bold;
+    }
+</style>
+
+<div class="users-container">
+
+    <h2 class="users-title">Users List</h2>
+
+    <div class="user-count">
+        Total Users: @Model.Count
+    </div>
+
+    <table class="users-table">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.name</td>
+                <td>@u.email</td>
+            </tr>
+        }
+    </table>
+
+</div>

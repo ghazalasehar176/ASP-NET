@@ -1,0 +1,98 @@
+﻿@model List<Order>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+   
+    .orders-container {
+        margin-top: 40px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .orders-title {
+        text-align: center;
+        color: #4b2e2e;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .orders-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+        .orders-table th {
+            background-color: #6b4f4f;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .orders-table td {
+            text-align: center;
+            padding: 12px;
+            color: #444;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .orders-table tr:hover {
+            background-color: #f8f3ed;
+        }
+
+    .badge-success {
+        background-color: #198754;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+
+    .badge-pending {
+        background-color: #ffc107;
+        color: #000;
+        padding: 4px 10px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+</style>
+
+<div class="orders-container">
+
+    <h2 class="orders-title">All Orders</h2>
+
+    <table class="orders-table">
+
+        <tr>
+            <th>Order ID</th>
+            <th>Email</th>
+            <th>Total</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+
+        @foreach (var o in Model)
+        {
+            <tr>
+                <td>#@o.OrderId</td>
+                <td>@o.Email</td>
+                <td>Rs. @o.TotalAmount</td>
+                <td>@o.OrderDate.ToString("dd MMM yyyy")</td>
+
+                <td>
+                    <span class="badge-success">
+                        Completed
+                    </span>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
